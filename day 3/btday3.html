@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //câu 1
+        const n = 5
+        for (i = 1; i <= n; i++) {
+            for (s = n; s > i; s--) {
+                document.write("&nbsp&nbsp")
+            }
+
+            for (k = 1; k <= i*2-1; k++) {
+                document.write("1")
+            }
+            document.write("<br>")
+        }
+
+        // câu 2
+        console.log("các số là 0 hoặc là chẵn")
+        myArr = [9,7,9,0,7,8,387,123,456]
+        for (i=1; i <= myArr.length; i++) {
+            if (myArr[i] === 0) {
+                console.log(myArr[i])
+            } 
+            else if (myArr[i] % 2 == 0) {
+                console.log(myArr[i])
+            }
+            else {
+                console.log()
+            }
+        }
+
+        // câu 3
+        myAnswer = []
+        var a = prompt("em đã ăn cơm chưa (yes/no)")
+
+        if (a == "yes") { 
+            cau1a = prompt("em có muốn ăn bánh ngọt tráng miệng không? yes/no")
+            cau2a = prompt("em có muốn uống nước không? yes/no")
+            cau3a = prompt("em có muốn chơi game không? yes/no")
+            cau4a = prompt("em có muốn đi chơi không? yes/no")
+            
+            myAnswer.push(cau1a)
+            myAnswer.push(cau2a)
+            myAnswer.push(cau3a)
+            myAnswer.push(cau4a)
+            console.log(myAnswer)
+        }
+
+        else {
+            cau1a = prompt("em có muốn ăn cơm vưới sườn xào chua ngọt không? yes/no")
+            cau2a = prompt("em có muốn đi dạo không? yes/no")
+            cau3a = prompt("em có muốn đi công viên không? yes/no")
+            cau4a = prompt("em có muốn đi chơi không? yes/no")
+            
+            myAnswer.push(cau1a)
+            myAnswer.push(cau2a)
+            myAnswer.push(cau3a)
+            myAnswer.push(cau4a)
+            console.log(myAnswer)
+        }
+
+
+    </script>
+
+</body>
+
+</html>
